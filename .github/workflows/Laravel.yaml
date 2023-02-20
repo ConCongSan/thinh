@@ -29,6 +29,4 @@ jobs:
       working-directory: thinh
       run: ./vendor/bin/phpunit
     - name: Setup PHP
-      uses: shivammathur/setup-php@v2
-      with:
-        php-version: ${{ matrix.version }}
+      run: ${{ matrix.version }}
